@@ -1,0 +1,6 @@
+E:\Meigy\Projects\SqlStress\bin\ScintillaNET.dll
+E:\Meigy\Projects\SqlStress\bin\ScintillaNET.pdb
+E:\Meigy\Projects\SqlStress\bin\ScintillaNET.xml
+E:\Meigy\Projects\SqlStress\ScintillaNET\obj\Release\ScintillaNET.csprojResolveAssemblyReference.cache
+E:\Meigy\Projects\SqlStress\ScintillaNET\obj\Release\ScintillaNET.dll
+E:\Meigy\Projects\SqlStress\ScintillaNET\obj\Release\ScintillaNET.pdb
