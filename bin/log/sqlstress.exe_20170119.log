@@ -1,0 +1,93 @@
+
+***********************TRACE_EXCEPTION 2017-01-19 9:18:05***********************
+InvalidOperationException 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 sqlstress.sqlrunner..ctor(DBConnectionSettings dbsettings) 位置 e:\szkingdom.com\new\sqlstress\sqlstress\database\dbbase.cs:行号 269 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-01-19 9:18:05***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:18:06***********************
+InvalidOperationException 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 sqlstress.sqlrunner..ctor(DBConnectionSettings dbsettings) 位置 e:\szkingdom.com\new\sqlstress\sqlstress\database\dbbase.cs:行号 269 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-01-19 9:18:34***********************
+InvalidOperationException 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 sqlstress.sqlrunner..ctor(DBConnectionSettings dbsettings) 位置 e:\szkingdom.com\new\sqlstress\sqlstress\database\dbbase.cs:行号 269 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-01-19 9:19:23***********************
+InvalidOperationException 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 sqlstress.sqlrunner..ctor(DBConnectionSettings dbsettings) 位置 e:\szkingdom.com\new\sqlstress\sqlstress\database\dbbase.cs:行号 269 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-01-19 9:21:40***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:22:37***********************
+InvalidOperationException 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 sqlstress.sqlrunner..ctor(DBConnectionSettings dbsettings) 位置 e:\szkingdom.com\new\sqlstress\sqlstress\database\dbbase.cs:行号 269 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-01-19 9:23:48***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:25:09***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:25:30***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:25:59***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:26:16***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:26:57***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:27:16***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:27:25***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:28:24***********************
+Exception 完成!
+ Source:
+
+***********************TRACE_EXCEPTION 2017-01-19 9:28:47***********************
+Exception 完成!
+ Source:

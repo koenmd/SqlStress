@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60B77BA8-0F02-4CFA-BD8B-6338D970D510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sqlstress</RootNamespace>
+    <AssemblyName>sqlstress</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.ConnectionUI, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controls\converable.cs" />
+    <Compile Include="controls\dbconneditor.cs" />
+    <Compile Include="controls\paramseditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controls\paramseditor.Designer.cs">
+      <DependentUpon>paramseditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controls\sqleditcontrol.cs" />
+    <Compile Include="controls\sqleditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controls\sqleditor.Designer.cs">
+      <DependentUpon>sqleditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dailog\DatapickView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dailog\DatapickView.Designer.cs">
+      <DependentUpon>DatapickView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dailog\dlgParamBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dailog\dlgParamBuilder.Designer.cs">
+      <DependentUpon>dlgParamBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dailog\dlgSqlBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dailog\dlgSqlBuilder.Designer.cs">
+      <DependentUpon>dlgSqlBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dailog\winAero.cs" />
+    <Compile Include="db\dbengine.cs" />
+    <Compile Include="db\dbrunner.cs" />
+    <Compile Include="db\dbwiz.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stress\stressengine.cs" />
+    <Compile Include="counter\perfcount.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="views\CaseView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\CaseView.Designer.cs">
+      <DependentUpon>CaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\RunnerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\RunnerView.Designer.cs">
+      <DependentUpon>RunnerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db\dbbase.cs" />
+    <Compile Include="stress\StressRunner.cs" />
+    <Compile Include="stress\StressScheme.cs" />
+    <Compile Include="utils\UtilClass.cs" />
+    <EmbeddedResource Include="controls\paramseditor.resx">
+      <DependentUpon>paramseditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controls\sqleditor.resx">
+      <DependentUpon>sqleditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailog\DatapickView.resx">
+      <DependentUpon>DatapickView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailog\dlgParamBuilder.resx">
+      <DependentUpon>dlgParamBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dailog\dlgSqlBuilder.resx">
+      <DependentUpon>dlgSqlBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="views\CaseView.resx">
+      <DependentUpon>CaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\RunnerView.resx">
+      <DependentUpon>RunnerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScintillaNET\ScintillaNET.csproj">
+      <Project>{22AE2386-60F1-476E-9303-61CDB0AAC4CF}</Project>
+      <Name>ScintillaNET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

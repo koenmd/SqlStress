@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<StressScheme scheme="sql2016" run_threads="10" run_maxtimes="1000000" run_mode="0" run_withresult="False" paintcolor="Turquoise">
+  <dbsettings>
+    <DbEngineSetting>
+      <Connection Type="SQLCLIENT" ConnectString="Data Source=10.201.80.201,1077;Initial Catalog=run;Persist Security Info=True;User ID=sa;Password=sa" />
+    </DbEngineSetting>
+  </dbsettings>
+</StressScheme>
