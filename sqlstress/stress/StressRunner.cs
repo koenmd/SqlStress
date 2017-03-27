@@ -9,47 +9,43 @@ namespace sqlstress
     public class StressRunner
     {
         public StressScheme Scheme {get; private set;}
-        private SchemeFeeder SchemeRunner;
-        public SQLStressEngine Engine;
-        public perfcount Counter;
+        private SchemeFeeder Feeder;
+        public DbStressEngine Engine;
+        public perfcount Counter { get; set; }
 
         //public perfcount PefCounter {get; set;}
         public Timer TimeCunter = new Timer();
 
         public EventHandler OnFinished;
 
-        //private StressEngine.WorkerCount[] WorkStatus = new StressEngine.WorkerCount[5];
-        //private int StatusIndex = 0;
-
-        private SQLStressEngine.WorkerCount WorkCountData0 = SQLStressEngine.WorkerCount.Empty;
-        private SQLStressEngine.WorkerCount WorkCountData1 = SQLStressEngine.WorkerCount.Empty;
+        private DbStressEngine.WorkerCounter WorkCountData0 = DbStressEngine.WorkerCounter.Empty;
+        private DbStressEngine.WorkerCounter WorkCountData1 = DbStressEngine.WorkerCounter.Empty;
 
         private object datasync = new object();
-        /*
-        public StressRunner(string _Scheme)
-        {
-            //Scheme = Utils.XmlSerializerObject.ObjFromXmlFile<StressScheme>(StressScheme.GetSchemeFile(_Scheme));
-            Scheme = new StressScheme(_Scheme);
-            SchemeRunner = new SchemeFeeder(Scheme);
-            Engine = new SQLStressEngine(new SQLStressEngine.EngineOption() { readresult = Scheme.run_withresult, workerscount = Scheme.run_threads }, Scheme.dbsettings, SchemeRunner);
-            TimeCunter.Interval = 1000;            
-            TimeCunter.Enabled = false;
-            TimeCunter.Elapsed += OnTimer;
-        }
-        */
+
         public StressRunner(StressScheme _Scheme)
         {
             //Scheme = Utils.XmlSerializerObject.ObjFromXmlFile<StressScheme>(StressScheme.GetSchemeFile(_Scheme));
             Scheme = _Scheme;
-            SchemeRunner = new SchemeFeeder(Scheme);
-            Engine = new SQLStressEngine(new SQLStressEngine.EngineOption() { readresult = Scheme.run_withresult, workerscount = Scheme.run_threads }, Scheme.dbsettings, SchemeRunner);
+                        
             TimeCunter.Interval = 1000;
             TimeCunter.Enabled = false;
             TimeCunter.Elapsed += OnTimer;
+
+            CreateEngine();
+        }
+
+        private void CreateEngine()
+        {
+            this.Feeder = null;
+            this.Feeder = new SchemeFeeder(Scheme);
+            this.Engine = null;
+            this.Engine = new DbStressEngine(new DbStressEngine.EngineOption() { readresult = Scheme.run_withresult, workerscount = Scheme.run_threads }, Scheme.dbsettings, Feeder);
         }
 
         public void OnTimer(object sender, ElapsedEventArgs e)
         {
+            if (Engine == null) return;
             //WorkStatus[StatusIndex % 5] = Engine.GlobalWrokCount;
             if (Engine.GlobalWrokCount.timestamp == 0) return;
             //if (WorkCountData1.timestamp == Engine.GlobalWrokCount.timestamp) return;
@@ -76,6 +72,7 @@ namespace sqlstress
 
         public void StartRun()
         {
+            CreateEngine();
             //SchemeRunner.prepare();
             //SchemeRunner.FeedInit();
             Engine.onWorkEvent = OnEnginWorking;
@@ -92,8 +89,8 @@ namespace sqlstress
             TimeCunter.Enabled = false;
 
             TimeCunter.Enabled = false;
-            WorkCountData0 = SQLStressEngine.WorkerCount.Empty;
-            WorkCountData1 = SQLStressEngine.WorkerCount.Empty;
+            WorkCountData0 = DbStressEngine.WorkerCounter.Empty;
+            WorkCountData1 = DbStressEngine.WorkerCounter.Empty;
         }
 
         public long Perfmon_ReqDone_PS
@@ -133,7 +130,7 @@ namespace sqlstress
             }
         }
 
-        public void OnEnginWorking(ref SQLStressEngine.WorkerInfo workerinfo, int EventId)
+        public void OnEnginWorking(ref DbStressEngine.WorkerInfo workerinfo, int EventId)
         {
             if (EventId == 0)
             {

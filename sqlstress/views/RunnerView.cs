@@ -32,6 +32,9 @@ namespace sqlstress.views
 
         public RunningStatus Status;
         private ZomUnit Zomunit = ZomUnit.millisecond;
+
+        private int SeriesIndex { get { return GetSeriesIndex(); } }
+
         public RunnerView()
         {
             InitializeComponent();
@@ -67,12 +70,35 @@ namespace sqlstress.views
                 }
                 Utils.Logger.Trace(new Exception(Resource.STRESSDONE), false, 0);
             };
-            chartExecute.Series[0].Color = _Scheme.PaintColor;
+
+            _Scheme.PropertyChanged += OnSchemePropChange;
+            chartExecute.Series[SeriesIndex].Color = _Scheme.PaintColor;
         }
 
+        private void OnSchemePropChange(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "PaintColor")
+            {
+                chartExecute.Series[SeriesIndex].Color = ((StressScheme)sender).PaintColor;
+            }
+        }
         public bool CheckRunner()
         {
             return Runner != null;
+        }
+
+        private int GetSeriesIndex()
+        {
+            var result = chartExecute.Series.IndexOf(Runner.Scheme.SchemeName);
+            if (result < 0)
+            {
+                var newseries = chartExecute.Series.Add(Runner.Scheme.SchemeName);
+                Utils.ToolBox.CopyObject<System.Windows.Forms.DataVisualization.Charting.Series>(chartExecute.Series[0], newseries);
+                newseries.Name = Runner.Scheme.SchemeName;
+                result = chartExecute.Series.IndexOf(Runner.Scheme.SchemeName);
+            }
+            //chartExecute.DataBind();
+            return result;
         }
 
         private void timerUpdate_Tick(object sender, EventArgs e)
@@ -107,7 +133,7 @@ namespace sqlstress.views
 
         public void UpdateShowCounters()
         {
-            chartExecute.Series[0].Points.AddXY(DateTime.Now, Runner.Perfmon_ReqDone_PS);
+            chartExecute.Series[SeriesIndex].Points.AddXY(DateTime.Now, Runner.Perfmon_ReqDone_PS);
             //chartExecute.ChartAreas[0].AxisX.ScaleView.Position = chartExecute.Series[0].Points.Count - 5; 
             switch (this.Zomunit)
             {
@@ -118,7 +144,7 @@ namespace sqlstress.views
                     chartExecute.Series[1].Points.AddXY(DateTime.Now, Runner.Perfmon_Time_PD * 1000);
                     break;
                 case ZomUnit.nanosecond:
-                    chartExecute.Series[1].Points.AddXY(DateTime.Now, Runner.Perfmon_Time_PD * 1000 * 1000);
+                    chartExecute.Series[1].Points.AddXY(DateTime.Now, Runner.Perfmon_Time_PD * 1000 * 10);
                     break;
             }
             
@@ -127,8 +153,9 @@ namespace sqlstress.views
 
         public void UpdateShowRunner()
         {
+            if (Runner.Engine == null) return;
             if (Runner.Engine.Workers == null) return;
-            foreach (SQLStressEngine.WorkerInfo wi in Runner.Engine.Workers)
+            foreach (DbStressEngine.WorkerInfo wi in Runner.Engine.Workers)
             {
                 string key = wi.index.ToString();
                 if (!lvWorkerStatus.Items.ContainsKey(key))
@@ -164,9 +191,10 @@ namespace sqlstress.views
                 timerUpdate.Enabled = true;
                 //btStart.Text = Resource.BTNTITLESTOP;
             }
-            catch (System.Exception)
+            catch (System.Exception e)
             {
                 Status = RunningStatus.NOTRUNNING;
+                throw e;
             }
             //btSet.Enabled = Status == RunningStatus.NOTRUNNING;
         }
@@ -258,8 +286,10 @@ namespace sqlstress.views
 
         private void tbClear_Click(object sender, EventArgs e)
         {
-            chartExecute.Series[0].Points.Clear();
-            chartExecute.Series[1].Points.Clear();
+            foreach (var series in chartExecute.Series)
+            {
+                series.Points.Clear();
+            }
         }
     }
 }

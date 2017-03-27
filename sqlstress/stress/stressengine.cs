@@ -14,15 +14,16 @@ using System.Data.Common;
 
 namespace sqlstress
 {
-    public interface ISQLStressFeeder
+    public interface IDbStressFeeder
     {
-        bool FeedNext(int index, ref string sql, ref Dictionary<string, string> parameters);
+        void FeederInit(DbStressEngine engin);
         string[] ExecInit();
-        string[] ExecFinished();
-        void FeedBegin();
+        string[] ExecFinished();        
+        string[] FeedFirst();        
+        bool FeedNext(int index, ref string sql, ref Dictionary<string, string> parameters);
     }
 
-    public class SQLStressEngine
+    public class DbStressEngine
     {
         public class EngineOption
         {
@@ -30,7 +31,7 @@ namespace sqlstress
             public int workerscount;
         }
 
-        public struct WorkerCount
+        public struct WorkerCounter
         {
             public long timestamp;
             public long donecount;
@@ -38,7 +39,7 @@ namespace sqlstress
             public long time_max;
             public long errorcount;
             public string lastjob;
-            public readonly static WorkerCount Empty = new WorkerCount()
+            public readonly static WorkerCounter Empty = new WorkerCounter()
             {
                 donecount = 0,
                 time_total = 0,
@@ -50,33 +51,27 @@ namespace sqlstress
 
         public class WorkerInfo
         {
-            public sqlrunner worker;
+            public DbRunner worker;
             public int index;
-            public WorkerCount workcount;
+            public WorkerCounter workcount;
         }
+                
+        public EngineOption Option {get; private set;}
+        public DbEngineSetting Settings { get; private set; }
+        public IDbStressFeeder Feeder { get; private set; }
 
         public WorkerInfo[] Workers;
-        public EngineOption Option {get; private set;}
-        public WorkerCount GlobalWrokCount = WorkerCount.Empty;
-        private DbEngineSetting Settings;
+        public WorkerCounter GlobalWrokCount = WorkerCounter.Empty;
+        private readonly Dictionary<WorkerInfo, Thread> ThreadPool = new Dictionary<WorkerInfo, Thread>();
 
-        private readonly Dictionary<WorkerInfo, Thread> threadPool = new Dictionary<WorkerInfo, Thread>();
-
-        //public delegate bool delegateOnWorkerFeed(int index, ref string sql, ref Dictionary<string, string> parameters);
-        //public delegateOnWorkerFeed onNeedFeed;
-
-        public delegate void delegateWorkerEvent(ref SQLStressEngine.WorkerInfo workerinfo, int EventId);
+        public delegate void delegateWorkerEvent(ref DbStressEngine.WorkerInfo workerinfo, int EventId);
         public delegateWorkerEvent onWorkEvent;
-
         public EventHandler OnWorkEnd;
 
         private Thread Monitor;
-
-        private ISQLStressFeeder Feeder;
-
         private object datasync = new object();
 
-        public SQLStressEngine(EngineOption option, DbEngineSetting settings, ISQLStressFeeder feeder)
+        public DbStressEngine(EngineOption option, DbEngineSetting settings, IDbStressFeeder feeder)
         {
             Option = option;
             Settings = settings;
@@ -91,22 +86,23 @@ namespace sqlstress
             {
                 Workers[i] = new WorkerInfo()
                 {
-                    worker = new sqlrunner(Settings),
+                    worker = new DbRunner(Settings),
                     index = i,
-                    workcount = WorkerCount.Empty
+                    workcount = WorkerCounter.Empty
                 };
+                Workers[i].worker.ParamTranslater = new sqlparamvalueTranslater();
             }
 
-            threadPool.Clear();
+            ThreadPool.Clear();
             foreach (WorkerInfo w in Workers)
             {
-                threadPool.Add(w, new Thread(new ParameterizedThreadStart(WorkProc)));
+                ThreadPool.Add(w, new Thread(new ParameterizedThreadStart(WorkProc)));
             }
         }
 
         private void MonitorProc()
         {
-            foreach (KeyValuePair<WorkerInfo, Thread> kv in threadPool)
+            foreach (KeyValuePair<WorkerInfo, Thread> kv in ThreadPool)
             {
                 kv.Value.Join();
             }
@@ -117,9 +113,9 @@ namespace sqlstress
             }
         }
 
-        private void RunInit()
+        private void StressInit()
         {
-            sqlrunner sqlr = new sqlrunner(Settings);
+            DbRunner sqlr = new DbRunner(Settings);
             //string sql = "";
             foreach (string sql in Feeder.ExecInit())
             {
@@ -127,37 +123,48 @@ namespace sqlstress
             } 
         }
 
+        private void WorkersInit()
+        {
+            foreach (WorkerInfo workder in this.Workers)
+            {
+                DbRunner sqlr = workder.worker;
+                //string sql = "";
+                foreach (string sql in Feeder.FeedFirst())
+                {
+                    sqlr.Run_NoResult(sql, null, false);
+                }
+            }
+        }
+
         public void StartWork()
         {
-            GlobalWrokCount = WorkerCount.Empty;
+            GlobalWrokCount = WorkerCounter.Empty;
 
-            try
+            string errormsg = "";
+            if (!Settings.TestEngine(ref errormsg)) throw new Exception(errormsg);        
+
+            Feeder.FeederInit(this);
+
+            StressInit();
+
+            CreateWorkers();
+
+            WorkersInit();
+
+            foreach (KeyValuePair<WorkerInfo, Thread> workerth in ThreadPool)
             {
-                if (!Settings.TestEngine()) return;
-            }
-            catch (Exception ex)
-            {
-                Utils.Logger.Trace(ex, true);
-                return;
-            }            
-
-            Feeder.FeedBegin();
-
-            RunInit();
-            CreateWorkers();             
-
-            foreach (KeyValuePair<WorkerInfo, Thread> kv in threadPool)
-            {
-                kv.Value.Start(kv.Key);
+                var wokerthread = workerth.Value;
+                var workerwork = workerth.Key;
+                wokerthread.Start(workerwork);
             }
 
             Monitor = new Thread(new ThreadStart(MonitorProc));
             Monitor.Start();
         }
 
-        private void RunFinished()
+        private void StressFinit()
         {
-            sqlrunner sqlr = new sqlrunner(Settings);
+            DbRunner sqlr = new DbRunner(Settings);
             //string sql = "";
             foreach (string sql in Feeder.ExecFinished())
             {
@@ -169,7 +176,7 @@ namespace sqlstress
         {
             try
             {
-                foreach (KeyValuePair<WorkerInfo, Thread> kv in threadPool)
+                foreach (KeyValuePair<WorkerInfo, Thread> kv in ThreadPool)
                 {
                     kv.Value.Abort();
                 }
@@ -179,7 +186,7 @@ namespace sqlstress
                 //do nothing
             }
 
-            RunFinished();
+            StressFinit();
         }
 
         /*

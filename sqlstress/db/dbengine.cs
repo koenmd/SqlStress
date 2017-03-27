@@ -16,13 +16,14 @@ namespace sqlstress
         public Microsoft.Data.ConnectionUI.DataSource datasource;
         public Microsoft.Data.ConnectionUI.DataProvider dataprovider;
     }
-    public interface IdbEngine
+    public interface IDbEngine
     {
-        DbConnection NewConnection(string connstring);
+        DbConnection NewConnection(string connstring, int timeout = 0);
         DbCommand NewCommand();
         DbDataAdapter NewDataAdapter(string connstring, string sql);
-        DbParameter NewParamenter(string paramanme, string paramvalue);
+        DbParameter NewParameter(string paramanme, string paramvalue, DbParamType paramtype = DbParamType.VARCHAR);
         DbEngineInfo GetInfo();
+        string ParameterPattern(string paramname);
     }
 
 }

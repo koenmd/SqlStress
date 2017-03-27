@@ -53,6 +53,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PropertyGrid propertyGridCase;
+        public System.Windows.Forms.PropertyGrid propertyGridCase;
     }
 }

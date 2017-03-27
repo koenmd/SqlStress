@@ -23,21 +23,27 @@ namespace sqlstress
         public static string DIAG_NEWTILE = "新建样本!";
         public static string DIAG_NEWTEXT = "输入样本名称!";
 
+        public static string DIAG_NEWCONN = "增加常用连接!";
+        public static string NEWCONNNAME = "输入名称!";
+        public static string NEWCONNERRMSG = "名称已存在!";
+
         public const string CAT_BASE = "基本";
         public const string CAT_BASE_NAME = "样本名称";
-        public const string CAT_EXEC = "执行";
+        public const string CAT_EXEC = "执行参数";
         public const string CAT_EXEC_THREAD = "线程数";
         public const string CAT_EXEC_MAXTIMES = "执行次数";
         public const string CAT_EXEC_WAY = "执行方式";
         public const string CAT_EXEC_GETRESULT = "读取结果";
         public const string CAT_EXEC_COLOR = "颜色";
-        public const string CAT_TASK = "任务";
+        public const string CAT_TASK = "任务参数";
+        
         public const string CAT_TASK_INIT = "任务初始执行";
         public const string CAT_TASK_FINIT = "任务结束执行";
-        public const string CAT_TASK_STRESS = "任务内容";
-        public const string CAT_TASK_STRESSDETAIL = "参数化运行(mssql以'@参数名'表示，ODBC以'?'表示)";
+        public const string CAT_TASK_STRESSINIT = "线程初始执行";
+        public const string CAT_TASK_STRESS = "线程批量执行";
+        public const string CAT_TASK_STRESSDETAIL = "参数化执行(mssql以'@参数名'表示，ODBC以'?'表示)";
         public const string CAT_CONN = "连接";
         public const string CAT_CONN_SETT = "连接设置";
-        
+        public const string CAT_CONN_USUAL = "常用连接";
     }
 }

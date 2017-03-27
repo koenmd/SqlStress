@@ -12,10 +12,10 @@ namespace sqlstress
 {
     public partial class sqleditor : Form
     {
-        public sqlexpression sqlexp {
+        public sqlserials sqlexp {
             get { return _sqlexp; }
             set { setsqlexp(value); }
-        } private sqlexpression _sqlexp = new sqlexpression();
+        } private sqlserials _sqlexp = new sqlserials();
 
         private sqleditcontrol lexer = null;
 
@@ -27,7 +27,7 @@ namespace sqlstress
             //this.edSql.LexerLanguage = 
         }
 
-        private void setsqlexp(sqlexpression value)
+        private void setsqlexp(sqlserials value)
         {
             _sqlexp = value;
             edSql.Text = _sqlexp.SqlText;
@@ -69,7 +69,7 @@ namespace sqlstress
                 edSql.Text = Scheme.StressqlStr;
             }
             */
-            using (dailog.dlgSqlBuilder builder = new dailog.dlgSqlBuilder(this.sqlexp))
+            using (dialog.dlgSqlBuilder builder = new dialog.dlgSqlBuilder(this.sqlexp))
             {
                 builder.Visible = false;
                 //Hide();
@@ -92,7 +92,7 @@ namespace sqlstress
             //打开属性编辑器修改数据 
             if (context.Instance != null)
             {
-                sqlexpression sqle = (sqlexpression)context.Instance;
+                sqlserials sqle = (sqlserials)context.Instance;
                 using (sqleditor editor = new sqleditor())
                 {
                     editor.sqlexp = sqle;

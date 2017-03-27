@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<StressScheme scheme="qrystkasset" run_threads="80" run_maxtimes="1000000" run_mode="1" run_withresult="False" parameterlized="True" paintcolor="Aqua">
+  <dbsettings>
+    <DbEngineSetting>
+      <Connection Type="ODBC" ConnectString="Dsn=zxjt_run;uid=sa;pwd=sa123!@#" />
+    </DbEngineSetting>
+  </dbsettings>
+</StressScheme>

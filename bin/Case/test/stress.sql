@@ -1,1 +1,0 @@
-select market, stkcode from run..stock where market = @market and stkcode = @stkcode

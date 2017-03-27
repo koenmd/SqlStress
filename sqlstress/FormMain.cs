@@ -25,6 +25,7 @@ namespace sqlstress
         {
             Logger.onLog += onLogEvent;
             this.LoadSchemes();
+            vrun.chartExecute.DoubleClick += this.vrunchartExecute_DoubleClick;
         }
 
         private void LoadSchemes()
@@ -84,6 +85,8 @@ namespace sqlstress
             StressScheme newscheme = new StressScheme();
 
             String NewSchemeName = Interaction.InputBox(Resource.NEWSCHEMEDIALOG, Resource.DIAG_NEWTILE, "NewScheme");
+            if (string.IsNullOrWhiteSpace(NewSchemeName)) return;
+
             if ((NewSchemeName == string.Empty) || (NewSchemeName.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
             {
                 MessageBox.Show(Resource.NEWSCHEMEERRMSG, Resource.MSGERRTITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -99,7 +102,14 @@ namespace sqlstress
         private void tbButtonRun_Click(object sender, EventArgs e)
         {
             tsslLastException.Text = "";
-            vrun.RunScheme();
+            try
+            {
+                vrun.RunScheme();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace, Resource.MSGERRTITLE, MessageBoxButtons.OK, MessageBoxIcon.Error);                
+            }            
         }
 
         private void tbButtonStop_Click(object sender, EventArgs e)
@@ -153,6 +163,26 @@ namespace sqlstress
                 Utils.Logger.delegateLogEvent dlg = new Utils.Logger.delegateLogEvent(onLogEvent);
                 this.Invoke(dlg, logtype, message, raise);
             }
+        }
+
+        private void tbUsualSettings_Click(object sender, EventArgs e)
+        {
+            using (dialog.dlgUsualSettings dlg = new dialog.dlgUsualSettings())
+            {
+                dlg.ShowDialog(this);
+            }
+        }
+
+        private void vrunchartExecute_DoubleClick(object sender, EventArgs e)
+        {
+            if (vrun.chartExecute != vcase.propertyGridCase.SelectedObject)
+            {
+                vcase.propertyGridCase.SelectedObject = vrun.chartExecute;
+            }
+            else
+            {
+                vcase.propertyGridCase.SelectedObject = CurrentScheme;
+            }            
         }
     }    
 }

@@ -23,6 +23,7 @@ namespace sqlstress
 
             // INITIAL VIEW CONFIG
             TextArea.WrapMode = WrapMode.Word;
+            
             //TextArea.IndentationGuides = IndentView.LookBoth;
 
             // STYLING

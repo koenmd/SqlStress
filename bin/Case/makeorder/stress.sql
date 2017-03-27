@@ -1,0 +1,1 @@
+insert into run.dbo.testorder(serverid, orderdate, ordersno, market, stkcode) values (1, 20170101, 19, @market, @stkcode)

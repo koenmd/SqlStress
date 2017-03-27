@@ -77,7 +77,7 @@ namespace sqlstress
 
         private void tsbParamsBuild_Click(object sender, EventArgs e)
         {
-            using (dailog.dlgParamBuilder builder = new dailog.dlgParamBuilder(sqlexp))
+            using (dialog.dlgParamBuilder builder = new dialog.dlgParamBuilder(sqlexp))
             {
                 builder.Visible = false;
                 builder.ShowDialog(this);

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<StressScheme scheme="qrysysconfig" run_threads="100" run_maxtimes="1000000" run_mode="0" run_withresult="False" parameterlized="False" paintcolor="Yellow">
+  <dbsettings>
+    <DbEngineSetting>
+      <Connection Type="ODBC" ConnectString="Dsn=run_2014;uid=sa;pwd=123456" />
+    </DbEngineSetting>
+  </dbsettings>
+</StressScheme>

@@ -42,6 +42,7 @@
             this.tsMenuItemMs = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuItemMm = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuItemNs = new System.Windows.Forms.ToolStripMenuItem();
+            this.tbClear = new System.Windows.Forms.ToolStripButton();
             this.toolBarButtonSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tbSnapShot = new System.Windows.Forms.ToolStripButton();
             this.lvWorkerStatus = new System.Windows.Forms.ListView();
@@ -52,7 +53,6 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timerUpdate = new System.Windows.Forms.Timer(this.components);
-            this.tbClear = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerRunner)).BeginInit();
             this.splitContainerRunner.Panel1.SuspendLayout();
             this.splitContainerRunner.Panel2.SuspendLayout();
@@ -133,6 +133,7 @@
             // 
             // toolBar
             // 
+            this.toolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btOpenCounter,
             this.tbOpenLog,
@@ -142,6 +143,7 @@
             this.tbSnapShot});
             this.toolBar.Location = new System.Drawing.Point(0, 0);
             this.toolBar.Name = "toolBar";
+            this.toolBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolBar.Size = new System.Drawing.Size(431, 25);
             this.toolBar.TabIndex = 10;
             // 
@@ -181,22 +183,32 @@
             this.tsMenuItemMs.CheckOnClick = true;
             this.tsMenuItemMs.CheckState = System.Windows.Forms.CheckState.Checked;
             this.tsMenuItemMs.Name = "tsMenuItemMs";
-            this.tsMenuItemMs.Size = new System.Drawing.Size(100, 22);
+            this.tsMenuItemMs.Size = new System.Drawing.Size(152, 22);
             this.tsMenuItemMs.Text = "毫秒";
             // 
             // tsMenuItemMm
             // 
             this.tsMenuItemMm.CheckOnClick = true;
             this.tsMenuItemMm.Name = "tsMenuItemMm";
-            this.tsMenuItemMm.Size = new System.Drawing.Size(100, 22);
+            this.tsMenuItemMm.Size = new System.Drawing.Size(152, 22);
             this.tsMenuItemMm.Text = "微秒";
             // 
             // tsMenuItemNs
             // 
             this.tsMenuItemNs.CheckOnClick = true;
             this.tsMenuItemNs.Name = "tsMenuItemNs";
-            this.tsMenuItemNs.Size = new System.Drawing.Size(100, 22);
-            this.tsMenuItemNs.Text = "纳秒";
+            this.tsMenuItemNs.Size = new System.Drawing.Size(152, 22);
+            this.tsMenuItemNs.Text = "100纳秒";
+            // 
+            // tbClear
+            // 
+            this.tbClear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbClear.Image = ((System.Drawing.Image)(resources.GetObject("tbClear.Image")));
+            this.tbClear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbClear.Name = "tbClear";
+            this.tbClear.Size = new System.Drawing.Size(23, 22);
+            this.tbClear.Text = "清除";
+            this.tbClear.Click += new System.EventHandler(this.tbClear_Click);
             // 
             // toolBarButtonSeparator1
             // 
@@ -263,16 +275,6 @@
             this.timerUpdate.Interval = 1000;
             this.timerUpdate.Tick += new System.EventHandler(this.timerUpdate_Tick);
             // 
-            // tbClear
-            // 
-            this.tbClear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbClear.Image = ((System.Drawing.Image)(resources.GetObject("tbClear.Image")));
-            this.tbClear.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbClear.Name = "tbClear";
-            this.tbClear.Size = new System.Drawing.Size(23, 22);
-            this.tbClear.Text = "清除";
-            this.tbClear.Click += new System.EventHandler(this.tbClear_Click);
-            // 
             // RunnerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -301,7 +303,6 @@
         private System.Windows.Forms.ToolStripButton tbOpenLog;
         private System.Windows.Forms.ToolStripSeparator toolBarButtonSeparator1;
         private System.Windows.Forms.ToolStripButton tbSnapShot;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartExecute;
         private System.Windows.Forms.ListView lvWorkerStatus;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -315,5 +316,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsMenuItemMm;
         private System.Windows.Forms.ToolStripMenuItem tsMenuItemNs;
         private System.Windows.Forms.ToolStripButton tbClear;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chartExecute;
     }
 }

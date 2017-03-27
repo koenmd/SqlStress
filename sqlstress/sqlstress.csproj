@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>statistics4.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Data.ConnectionUI, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -74,36 +77,46 @@
     <Compile Include="controls\sqleditor.Designer.cs">
       <DependentUpon>sqleditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="dailog\DatapickView.cs">
+    <Compile Include="dialog\DatapickView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="dailog\DatapickView.Designer.cs">
+    <Compile Include="dialog\DatapickView.Designer.cs">
       <DependentUpon>DatapickView.cs</DependentUpon>
     </Compile>
-    <Compile Include="dailog\dlgParamBuilder.cs">
+    <Compile Include="dialog\dlgParamBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dailog\dlgParamBuilder.Designer.cs">
+    <Compile Include="dialog\dlgParamBuilder.Designer.cs">
       <DependentUpon>dlgParamBuilder.cs</DependentUpon>
     </Compile>
-    <Compile Include="dailog\dlgSqlBuilder.cs">
+    <Compile Include="dialog\dlgSqlBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dailog\dlgSqlBuilder.Designer.cs">
+    <Compile Include="dialog\dlgSqlBuilder.Designer.cs">
       <DependentUpon>dlgSqlBuilder.cs</DependentUpon>
     </Compile>
-    <Compile Include="dailog\winAero.cs" />
+    <Compile Include="dialog\dlgUsualSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog\dlgUsualSettings.Designer.cs">
+      <DependentUpon>dlgUsualSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialog\winAero.cs" />
     <Compile Include="db\dbengine.cs" />
     <Compile Include="db\dbrunner.cs" />
+    <Compile Include="db\dbsetting.cs" />
     <Compile Include="db\dbwiz.cs" />
+    <Compile Include="extends\SettingsHelp.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="stress\stressengine.cs" />
-    <Compile Include="counter\perfcount.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="stress\sqlexp.cs" />
+    <Compile Include="stress\StressEngine.cs" />
+    <Compile Include="stress\counter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.cs" />
@@ -122,21 +135,24 @@
     <Compile Include="db\dbbase.cs" />
     <Compile Include="stress\StressRunner.cs" />
     <Compile Include="stress\StressScheme.cs" />
-    <Compile Include="utils\UtilClass.cs" />
+    <Compile Include="extends\UtilClass.cs" />
     <EmbeddedResource Include="controls\paramseditor.resx">
       <DependentUpon>paramseditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controls\sqleditor.resx">
       <DependentUpon>sqleditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dailog\DatapickView.resx">
+    <EmbeddedResource Include="dialog\DatapickView.resx">
       <DependentUpon>DatapickView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dailog\dlgParamBuilder.resx">
+    <EmbeddedResource Include="dialog\dlgParamBuilder.resx">
       <DependentUpon>dlgParamBuilder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dailog\dlgSqlBuilder.resx">
+    <EmbeddedResource Include="dialog\dlgSqlBuilder.resx">
       <DependentUpon>dlgSqlBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog\dlgUsualSettings.resx">
+      <DependentUpon>dlgUsualSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -173,6 +189,9 @@
       <Project>{22AE2386-60F1-476E-9303-61CDB0AAC4CF}</Project>
       <Name>ScintillaNET</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="statistics4.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

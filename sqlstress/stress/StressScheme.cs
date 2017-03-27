@@ -14,208 +14,11 @@ using System.Data;
 using System.Drawing;
 
 namespace sqlstress
-{
-    public class sqlstatement
-    {
-        public string sql { get; set; }
-        public Dictionary<string, string> sqlparams { get; set; }
-        public static sqlstatement Empty = new sqlstatement("", null);
-        public sqlstatement(string _sql, Dictionary<string, string> _sqlparams)
-        {
-            sql = _sql;
-            sqlparams = _sqlparams;
-        }
-    }
-
-    [Serializable]
-    [TypeConverter(typeof(XMLConvertor<sqlexpression>))]
-    public class sqlexpression : IEnumerable, IXmlSerializable
-    {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-        [Editor(typeof(sqlstringeditor), typeof(UITypeEditor))]
-        [Localizable(true)]
-        public string SqlText { get; set; } //private string _sqltext = "";
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-        [Editor(typeof(sqlparamsditor), typeof(UITypeEditor))]
-        [Localizable(true)]
-        public string ParamText { get; set; } //private string _paramtext = "";
-        public bool Paramexecute { get { return ParamText != ""; } }
-
-        public static string DIV_SQLSTRING = "\r\ngo\r\n";
-        public static string DIV_PARSTRING = "\r\n";
-        public static string DIV_PARITEMS = "\t";
-
-        public static sqlexpression Empty = new sqlexpression();
-        public sqlexpression()
-        {
-            SqlText = "";
-            ParamText = "";
-        }
-        public sqlexpression(string _sqltext = "", string _paramtext = "")
-        {
-            SqlText = _sqltext;
-            ParamText = _paramtext;
-        }
-
-        [Browsable(false)]
-        internal string[] Sqls {
-            get
-            {
-                return SqlText.Split(new string[] { DIV_SQLSTRING }, StringSplitOptions.RemoveEmptyEntries);
-            }
-        }
-
-        [Browsable(false)]
-        internal string[] Params {
-            get
-            {
-                return ParamText.Split(new string[] { DIV_PARSTRING }, StringSplitOptions.RemoveEmptyEntries);
-            }
-        }
-
-        [Browsable(false)]
-        public List<string> ParamNames {
-            get
-            {
-                return getSQLParams(SqlText);
-            }
-        }
-
-        [Browsable(false)]
-        public DataTable ParamsData {
-            get
-            {
-                DataTable ParamsTable = new DataTable();
-
-                ParamsTable.BeginInit();
-                foreach (string paramname in ParamNames)
-                {
-                    DataColumn dc = ParamsTable.Columns.Add(paramname);
-                }
-                                
-                List<string> paramnames = this.ParamNames;
-                foreach (string paramstr in this.Params)
-                {                    
-                    DataRow row = ParamsTable.NewRow();
-                    string[] paramvalues = paramstr.Split(DIV_PARITEMS.ToArray());
-                    for (int i = 0; i < paramnames.Count; i++)
-                    {                        
-                        row[paramnames[i]] = paramvalues[i];
-                    }
-                    ParamsTable.Rows.Add(row);
-                }
-                ParamsTable.AcceptChanges();
-                ParamsTable.EndInit();
-
-                return ParamsTable;
-            }
-            set
-            {
-                if (value == null) return;
-                List<string> ParamLines = new List<string>();
-                List<string> Linevalues = new List<string>();
-                foreach (DataRow row in value.Rows)
-                {
-                    Linevalues.Clear();
-                    for (int i = 0; i < value.Columns.Count; i++)
-                    {
-                        Linevalues.Add(row[i].ToString());
-                    }
-                    ParamLines.Add(string.Join(DIV_PARITEMS, Linevalues));
-                }
-                this.ParamText = string.Join(DIV_PARSTRING, ParamLines);
-            }
-        }
-
-        public static List<string> getSQLParams(string sql)
-        {
-            List<string> ps = new List<string>();
-            Regex r = new Regex(@"(@\w+\b|\?\w*)");
-            var matches = r.Matches(sql);
-            foreach (Match item in matches)
-            {
-                if (ps.IndexOf(item.Value) < 0)
-                {
-                    ps.Add(item.Value == "?" ? ps.Count.ToString() : item.Value);
-                }
-            }
-            return ps;
-        }
-
-        public IEnumerator GetEnumerator()
-        {
-            if (Paramexecute && this.ParamNames.Count > 0)
-            {
-                List<string> paramnames = this.ParamNames;
-                foreach (string paramstr in this.Params)
-                {
-                    string[] paramvalues = paramstr.Split(DIV_PARITEMS.ToArray());
-                    Dictionary<string, string> sqlparams = new Dictionary<string, string>();
-                    for (int i = 0; i < paramnames.Count; i++ )
-                    {
-                        sqlparams.Add(paramnames[i], paramvalues.Length > i ? paramvalues[i] : string.Empty);
-                    }
-                    yield return new sqlstatement(this.SqlText, sqlparams);
-                }
-            }
-            else
-            {
-                foreach (string sql in this.Sqls)
-                {
-                    yield return new sqlstatement(sql, null);
-                }
-            }
-        }
-
-        public override string ToString()
-        {
-            return string.Format("sqls({0}|params({1}))", Sqls.Length, Params.Length);
-        }
-
-        public System.Xml.Schema.XmlSchema GetSchema()
-        {
-            return null;
-        }
-
-        public void ReadXml(System.Xml.XmlReader reader)
-        {
-            if (reader.MoveToContent() == XmlNodeType.Element)
-            {
-                if (reader.MoveToContent() != XmlNodeType.Element || reader.LocalName != "sqlexpression") reader.ReadToDescendant("sqlexpression");
-                if (reader.MoveToContent() == XmlNodeType.Element && reader.LocalName == "sqlexpression")
-                {
-                    this.SqlText = reader.ReadElementString("sql");
-                    this.ParamText = reader.ReadElementString("params");
-                }
-                reader.Read();
-            }
-            //ServerAgent = new PlantRequestAgent(Serverinfo);
-        }
-
-        public void WriteXml(System.Xml.XmlWriter writer)
-        {
-            writer.WriteStartElement("sqlexpression");
-            writer.WriteElementString("sql", this.SqlText);
-            writer.WriteElementString("params", this.ParamText);
-            writer.WriteEndElement();
-        }
-    }
-
-    [Serializable]
-    [TypeConverter(typeof(XMLConvertor<sqlexpressionsmp>))]
-    public class sqlexpressionsmp : sqlexpression
-    {
-        [Browsable(false)]
-        public string ParamText { get; set; } //private string _paramtext = "";
-        [Browsable(false)]
-        public bool Paramexecute { get { return ParamText != ""; } }
-        public static sqlexpressionsmp Empty = new sqlexpressionsmp();
-    }
-
+{ 
     [Serializable]
     public class StressScheme: IXmlSerializable
     {
-        public enum Scheme_RunMode
+        public enum SchemeOption_RunMode
         {
             InOrder = 0,
             Random = 1,
@@ -228,18 +31,22 @@ namespace sqlstress
         [CategoryAttribute(Resource.CAT_EXEC), DisplayName(Resource.CAT_EXEC_MAXTIMES), Browsable(true)]
         public int run_maxtimes { get; set; } = 1000000;
         [CategoryAttribute(Resource.CAT_EXEC), DisplayName(Resource.CAT_EXEC_WAY), Browsable(true)]
-        public Scheme_RunMode run_mode { get; set; } = Scheme_RunMode.InOrder;
+        public SchemeOption_RunMode run_mode { get; set; } = SchemeOption_RunMode.InOrder;
         //public bool run_withparams = false;
         [CategoryAttribute(Resource.CAT_EXEC), DisplayName(Resource.CAT_EXEC_GETRESULT), Browsable(true)]
         public bool run_withresult { get; set; } = false;
         //[NonSerialized]
         [CategoryAttribute(Resource.CAT_TASK), DisplayName(Resource.CAT_TASK_INIT), Browsable(true)]
         [Description("sql execute at start")]
-        public sqlexpressionsmp sql_init { get; set; } = new sqlexpressionsmp();
+        public sqlexpsimple sql_init { get; set; } = new sqlexpsimple();
         //[NonSerialized]
         [CategoryAttribute(Resource.CAT_TASK), DisplayName(Resource.CAT_TASK_FINIT), Browsable(true)]
         [Description("sql execute at stop")]
-        public sqlexpressionsmp sql_finit { get; set; } = new sqlexpressionsmp();
+        public sqlexpsimple sql_finit { get; set; } = new sqlexpsimple();
+        //[NonSerialized]
+        [CategoryAttribute(Resource.CAT_TASK), DisplayName(Resource.CAT_TASK_STRESSINIT), Browsable(true)]
+        [Description("sql statement")]
+        public sqlexpsimple sql_stressfirst { get; set; } = new sqlexpsimple();
         //[NonSerialized]
         [CategoryAttribute(Resource.CAT_TASK), DisplayName(Resource.CAT_TASK_STRESS), Browsable(true)]
         [Description(Resource.CAT_TASK_STRESSDETAIL)]
@@ -249,11 +56,19 @@ namespace sqlstress
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         [Editor(typeof(dbconneditor), typeof(UITypeEditor))]
         [Localizable(true)]
-        [Description("dbconnection wizzard")]
+        [Description("db connection wizard")]
         public DbEngineSetting dbsettings { get; set; } = new DbEngineSetting();
+        //[NonSerialized]
+        [CategoryAttribute(Resource.CAT_CONN), DisplayName(Resource.CAT_CONN_USUAL), Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
+        [Editor(typeof(dbusualconneditor), typeof(UITypeEditor))]
+        [Localizable(true)]
+        [Description("quick set connection")]
+        public EnginSettingsHelper dbsettingshelper { get; set; } = EnginSettingsHelper.LoadEnginSettingsHelper();
+
         [CategoryAttribute(Resource.CAT_EXEC), DisplayName(Resource.CAT_EXEC_COLOR), Browsable(true)]
         [Description("paint color")]
-        public Color PaintColor { get; set; } = Color.LightGreen;
+        public Color PaintColor { get { return _paintcolor; } set { _paintcolor = value; NotifyPropertyChanged("PaintColor");  }} private Color _paintcolor = Color.LightGreen;
 
         private SchemeReaderWriter ReaderWriter;
 
@@ -313,15 +128,25 @@ namespace sqlstress
             ReaderWriter = new SchemeReaderWriter(this);
             //sql_stress = new string[1];
             //stress_params = new string[1];
+            dbsettingshelper.Scheme = this;
         }
 
-        public StressScheme(string _schemename)
+        public StressScheme(string _schemename) : this()
         {
             this.SchemeName = _schemename;
-            ReaderWriter = new SchemeReaderWriter(this);
+            //ReaderWriter = new SchemeReaderWriter(this);
             //sql_stress = new string[1];
             //stress_params = new string[1];
             ReaderWriter.LoadScheme();
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void NotifyPropertyChanged(string ProName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(ProName));
+            }
         }
 
         public void CopyTo(StressScheme newScheme)
@@ -335,6 +160,7 @@ namespace sqlstress
             newScheme.sql_init = this.sql_init;
             newScheme.sql_finit = this.sql_finit;
             newScheme.sql_stress = this.sql_stress;
+            newScheme.sql_stressfirst = this.sql_stressfirst;
             //newScheme.stress_params = this.stress_params;
             newScheme.dbsettings = this.dbsettings;
             newScheme.PaintColor = this.PaintColor;
@@ -354,7 +180,6 @@ namespace sqlstress
             ReaderWriter.DeleteScheme();
         }
 
-
         public System.Xml.Schema.XmlSchema GetSchema()
         {
             return null;
@@ -367,12 +192,13 @@ namespace sqlstress
                 this.SchemeName = reader["scheme"];
                 this.run_threads = int.Parse(reader["run_threads"]);
                 this.run_maxtimes = int.Parse(reader["run_maxtimes"]);
-                this.run_mode = (Scheme_RunMode)int.Parse(reader["run_mode"]);
+                this.run_mode = (SchemeOption_RunMode)int.Parse(reader["run_mode"]);
                 //this.run_withparams = bool.Parse(reader["run_withparams"]);
                 this.run_withresult = bool.Parse(reader["run_withresult"]);
                 try
-                {
+                {                    
                     this.PaintColor = Color.FromName(reader["paintcolor"]);
+                    this.sql_stress.Paramexecute = bool.Parse(reader["parameterlized"]);
                 }
                 catch (Exception) {}                
                 if (reader.MoveToContent() != XmlNodeType.Element || reader.LocalName != "dbsettings") reader.ReadToDescendant("dbsettings");
@@ -383,6 +209,7 @@ namespace sqlstress
                 reader.Read();
             }
             //ServerAgent = new PlantRequestAgent(Serverinfo);
+            //ReaderWriter.LoadScheme();
         }
 
         public void WriteXml(System.Xml.XmlWriter writer)
@@ -394,6 +221,7 @@ namespace sqlstress
             writer.WriteAttributeString("run_mode", ((int)(this.run_mode)).ToString());
             //writer.WriteAttributeString("run_withparams", this.run_withparams.ToString());
             writer.WriteAttributeString("run_withresult", this.run_withresult.ToString());
+            writer.WriteAttributeString("parameterlized", this.sql_stress.Paramexecute.ToString());
             writer.WriteAttributeString("paintcolor", this.PaintColor.Name);
             //writer.WriteStartElement("sql_init");
             //writer.WriteElementString("", this.sql_init);
@@ -401,12 +229,15 @@ namespace sqlstress
             writer.WriteStartElement("dbsettings");
             Utils.XmlSerializerObject.ObjToXml(this.dbsettings, this.dbsettings.GetType(), writer);
             writer.WriteEndElement();
+
+            //ReaderWriter.SaveScheme();
         }
 
         class SchemeReaderWriter
         {
             private const string filename_scheme = "case.xml";
             private const string filename_stress = "stress.sql";
+            private const string filename_stressinit = "stressfirst.sql";
             private const string filename_params = "params.sql";
             private const string filename_init = "init.sql";
             private const string filename_finit = "finit.sql";
@@ -459,6 +290,10 @@ namespace sqlstress
                 {
                     Scheme.sql_finit.SqlText = Utils.ToolBox.FileToString(SchemePath + filename_finit);
                 }
+                if (File.Exists(SchemePath + filename_stressinit))
+                {
+                    Scheme.sql_stressfirst.SqlText = Utils.ToolBox.FileToString(SchemePath + filename_stressinit);
+                }
             }
 
             public void SaveScheme()
@@ -496,6 +331,7 @@ namespace sqlstress
                 Utils.ToolBox.StringToFile(SchemePath + filename_params, Scheme.ParamssqlStr);
                 Utils.ToolBox.StringToFile(SchemePath + filename_init, Scheme.sql_init.SqlText);
                 Utils.ToolBox.StringToFile(SchemePath + filename_finit, Scheme.sql_finit.SqlText);
+                Utils.ToolBox.StringToFile(SchemePath + filename_stressinit, Scheme.sql_stressfirst.SqlText);
                 Utils.XmlSerializerObject.ObjToXMLFile(SchemePath + filename_scheme, Scheme, typeof(StressScheme), null, "");
             }
 
@@ -506,7 +342,7 @@ namespace sqlstress
         }
     }
 
-    class SchemeFeeder : ISQLStressFeeder
+    class SchemeFeeder : IDbStressFeeder
     {
         /*
         public struct SqlTask
@@ -527,48 +363,32 @@ namespace sqlstress
         public SchemeFeeder(StressScheme _Scheme)
         {
             Scheme = _Scheme;
-
-            /*
-            if (Scheme.run_withparams)
-            {
-                foreach (string p in Scheme.stress_params)
-                {
-                    FeedTasks.Add(new SqlTask() { sql = Scheme.sql_stress[0], paramvalues = p, parameters = getSQLParamNames(Scheme.sql_stress[0]) });
-                }
-            }
-            else
-            {
-                foreach (string q in Scheme.sql_stress)
-                {
-                    FeedTasks.Add(new SqlTask() { sql = q, paramvalues = "" });
-                }
-            }
-            */
         }
 
-        /*
-        public static string[] getSQLParamNames(string sql)
+        public void FeederInit(DbStressEngine engin)
         {
-            List<string> ps = new List<string>();
-            Regex r = new Regex(@"(@\w+\b|\?\w*)");
-            var matches = r.Matches(sql);
-            foreach (Match item in matches)
-            {
-                if (ps.IndexOf(item.Value) < 0)
-                {
-                    ps.Add(item.Value);
-                }                
-            }
-            return ps.ToArray();
-        }
-        */
-        public void FeedBegin()
-        {
-            //Scheme.LoadData();
-
+            //进度重置
             Scheme.run_feed = 0;
+
+            //形参转换为
+            List<KeyValuePair<int, string>> paramsinfo = sqlexpression.getSQLParams(Scheme.sql_stress.SqlText);
+            IDbEngine sqlengin = engin.Settings.CreateEngine();
+
             foreach (sqlstatement st in Scheme.sql_stress)
             {
+                if (Scheme.sql_stress.Paramexecute && paramsinfo.Count > 0)
+                {
+                    string newsql = "";
+                    int currentpos = 0;
+                    foreach (KeyValuePair<int, string> paraminfo in paramsinfo)
+                    {
+                        newsql += st.sql.Substring(currentpos, paraminfo.Key - currentpos);
+                        newsql += sqlengin.ParameterPattern(paraminfo.Value);
+                        currentpos = paraminfo.Key + paraminfo.Value.Length;
+                    }
+                    newsql += st.sql.Substring(currentpos, st.sql.Length - currentpos);
+                    st.sql = newsql;
+                }
                 FeedTasks.Add(st);
             }
 
@@ -579,7 +399,7 @@ namespace sqlstress
             }
 
             int taskremain = Scheme.run_maxtimes;
-            if (Scheme.run_mode == StressScheme.Scheme_RunMode.Random)
+            if (Scheme.run_mode == StressScheme.SchemeOption_RunMode.Random)
             {
                 Random r = new Random(DateTime.Now.Millisecond);
                 while (taskremain-- > 0)
@@ -622,26 +442,7 @@ namespace sqlstress
             }
 
             if (ntask < 0) return false;
-            /*
-            SqlTask task = FeedTasks[ntask];
 
-            sql = task.sql;
-            string[] paramvalues;
-            if (Scheme.run_withparams)
-            {
-                paramvalues = task.paramvalues.Split(new string[]{StressScheme.DIV_PARITEMS}, StringSplitOptions.RemoveEmptyEntries);
-                parameters = new Dictionary<string, string>();
-                for (int i = 0; i < task.parameters.Length; i++ )
-                {
-                    if (i >= paramvalues.Length) break;
-                    parameters.Add(task.parameters[i] != "?" ? task.parameters[i] : i.ToString(), paramvalues[i].Trim());
-                }
-            }
-            else
-            {
-                parameters = null;
-            }
-            */
             sql = FeedTasks[ntask].sql;
             parameters = FeedTasks[ntask].sqlparams;
             Scheme.run_feed++;
@@ -663,15 +464,12 @@ namespace sqlstress
 
         public string[] ExecFinished()
         {
-            /*
-            sqlrunner sqlr = new sqlrunner(Scheme.dbsettings);
-            if (Scheme.sql_finit != "")
-            {
-                sqlr.Run_NoResult(Scheme.sql_finit, null, false);
-            }  
-             * */
-            //return Scheme.sql_finit.Split(new string[] { StressScheme.DIV_SQLSTRING }, StringSplitOptions.RemoveEmptyEntries);
             return Scheme.sql_finit.Sqls;
+        }
+
+        public string[] FeedFirst()
+        {
+            return Scheme.sql_stressfirst.Sqls;
         }
     }
 }

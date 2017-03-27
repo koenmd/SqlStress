@@ -40,11 +40,12 @@ E:\Meigy\Projects\SqlStress\bin\sqlstress.pdb
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.csprojResolveAssemblyReference.cache
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.paramseditor.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.sqleditor.resources
-E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dailog.DatapickView.resources
-E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dailog.dlgParamBuilder.resources
-E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dailog.dlgSqlBuilder.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.FormMain.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.Properties.Resources.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.views.CaseView.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.views.RunnerView.resources
 E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.csproj.GenerateResource.Cache
+E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dialog.DatapickView.resources
+E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dialog.dlgParamBuilder.resources
+E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dialog.dlgSqlBuilder.resources
+E:\Meigy\Projects\SqlStress\sqlstress\obj\x86\Release\sqlstress.dialog.dlgUsualSettings.resources

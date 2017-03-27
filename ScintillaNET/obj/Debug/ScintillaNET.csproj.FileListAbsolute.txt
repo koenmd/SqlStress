@@ -1,0 +1,5 @@
+E:\Meigy\Projects\SqlStress\ScintillaNET\bin\Debug\ScintillaNET.xml
+E:\Meigy\Projects\SqlStress\ScintillaNET\bin\Debug\ScintillaNET.dll
+E:\Meigy\Projects\SqlStress\ScintillaNET\bin\Debug\ScintillaNET.pdb
+E:\Meigy\Projects\SqlStress\ScintillaNET\obj\Debug\ScintillaNET.dll
+E:\Meigy\Projects\SqlStress\ScintillaNET\obj\Debug\ScintillaNET.pdb

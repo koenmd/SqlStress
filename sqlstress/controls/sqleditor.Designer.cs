@@ -40,6 +40,7 @@
             // 
             // toolBar
             // 
+            this.toolBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbSQLImport,
             this.toolStripSeparator,
@@ -86,10 +87,12 @@
             // edSql
             // 
             this.edSql.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.edSql.CaretForeColor = System.Drawing.Color.White;
             this.edSql.Dock = System.Windows.Forms.DockStyle.Fill;
             this.edSql.Lexer = ScintillaNET.Lexer.Sql;
             this.edSql.Location = new System.Drawing.Point(0, 25);
             this.edSql.Name = "edSql";
+            this.edSql.ScrollWidth = 640;
             this.edSql.Size = new System.Drawing.Size(811, 467);
             this.edSql.TabIndex = 11;
             this.edSql.Text = "scintilla1";

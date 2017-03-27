@@ -41,6 +41,7 @@
             this.tbButtonRun = new System.Windows.Forms.ToolStripButton();
             this.tbButtonStop = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tbUsualSettings = new System.Windows.Forms.ToolStripButton();
             this.tbButtonHelp = new System.Windows.Forms.ToolStripButton();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.menuItemCase = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,6 +86,7 @@
             this.tbButtonRun,
             this.tbButtonStop,
             this.toolStripSeparator2,
+            this.tbUsualSettings,
             this.tbButtonHelp});
             this.toolBar.Location = new System.Drawing.Point(0, 25);
             this.toolBar.Name = "toolBar";
@@ -167,6 +169,16 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tbUsualSettings
+            // 
+            this.tbUsualSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tbUsualSettings.Image = ((System.Drawing.Image)(resources.GetObject("tbUsualSettings.Image")));
+            this.tbUsualSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbUsualSettings.Name = "tbUsualSettings";
+            this.tbUsualSettings.Size = new System.Drawing.Size(23, 22);
+            this.tbUsualSettings.Text = "常用连接";
+            this.tbUsualSettings.Click += new System.EventHandler(this.tbUsualSettings_Click);
             // 
             // tbButtonHelp
             // 
@@ -421,5 +433,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemSave;
         private System.Windows.Forms.ToolStripSeparator menuItem4;
         private System.Windows.Forms.ToolStripMenuItem menuItemExit;
+        private System.Windows.Forms.ToolStripButton tbUsualSettings;
     }
 }

@@ -1,0 +1,1 @@
+select top 2 stkavl from  run..stkasset where stkcode=@stkcode and market=@market

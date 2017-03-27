@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<StressScheme scheme="prc_qurystkasset" run_threads="100" run_maxtimes="1000000" run_mode="0" run_withresult="False" parameterlized="False" paintcolor="LightGreen">
+  <dbsettings>
+    <DbEngineSetting>
+      <Connection Type="" ConnectString="" />
+    </DbEngineSetting>
+  </dbsettings>
+</StressScheme>

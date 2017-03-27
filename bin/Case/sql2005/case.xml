@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<StressScheme scheme="sql2005" run_threads="20" run_maxtimes="1000000" run_mode="0" run_withresult="False" paintcolor="LightGreen">
-  <dbsettings>
-    <DbEngineSetting>
-      <Connection Type="SQLCLIENT" ConnectString="Data Source=10.201.80.201;Initial Catalog=run;User ID=sa;Password=Huawei12#$" />
-    </DbEngineSetting>
-  </dbsettings>
-</StressScheme>

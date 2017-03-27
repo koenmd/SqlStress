@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-16"?>
+<EnginSettingsHelper>
+  <SettingCollection>
+    <item>
+      <UsualSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DisplayName>local_odbc_2014</DisplayName>
+        <Setting>
+          <Connection Type="ODBC" ConnectString="Dsn=run_2014;uid=sa;pwd=123456" />
+        </Setting>
+      </UsualSetting>
+    </item>
+    <item>
+      <UsualSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DisplayName>local_odbc_2005</DisplayName>
+        <Setting>
+          <Connection Type="ODBC" ConnectString="Dsn=run_2005;uid=sa;pwd=123456" />
+        </Setting>
+      </UsualSetting>
+    </item>
+    <item>
+      <UsualSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DisplayName>huawei2014_10.201.80.201</DisplayName>
+        <Setting>
+          <Connection Type="SQLCLIENT" ConnectString="Data Source=10.201.80.201,2014;Initial Catalog=run;User ID=sa;Password=sa123!@#" />
+        </Setting>
+      </UsualSetting>
+    </item>
+  </SettingCollection>
+</EnginSettingsHelper>

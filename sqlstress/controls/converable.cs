@@ -127,7 +127,8 @@ namespace sqlstress
             if (destinationType == typeof(string) &&
                 value is T)
             {
-                return Utils.XmlSerializerObject.ObjToXml(value, typeof(T));
+                //return Utils.XmlSerializerObject.ObjToXml(value, typeof(T));
+                return value == null ? "" : value.ToString();
             }
 
             return base.ConvertTo(context, culture, value, destinationType);
@@ -142,6 +143,30 @@ namespace sqlstress
             }
 
             return base.ConvertFrom(context, culture, value);
+        }
+    }
+        
+    public interface IDisplay
+    {
+        /// <summary>
+        /// 得到显示字符串
+        /// </summary>
+        /// <returns></returns>
+        string GetPropValueDisplay();
+    }
+    
+    public class XMLDisplayConvertor<T> : XMLConvertor<T> where T : IDisplay
+    {
+        public override object ConvertTo(ITypeDescriptorContext context, System.Globalization.CultureInfo culture,
+            object value, Type destinationType)
+        {
+            if (destinationType == typeof(string) &&
+                value is T)
+            {
+                return ((IDisplay)value).GetPropValueDisplay(); ;
+            }
+
+            return base.ConvertTo(context, culture, value, destinationType);
         }
     }
 }

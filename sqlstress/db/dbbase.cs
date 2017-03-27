@@ -13,16 +13,34 @@ using System.Data;
 
 namespace sqlstress
 {
-    public class OdbcEngine : IdbEngine
+    public enum DbParamType
     {
-        private static string[] ParamTypeTags = new string[3] { "$i", "$c", "$n" };
+        INT = 0,
+        VARCHAR = 1,
+        FLOAT = 2,
+    }
+
+    public class DbParamTranslater
+    {
+        public static DbParamTranslater DefaultTranslater = new DbParamTranslater();
+        public virtual DbParamType Translate(string paramname, string paramvalue)
+        {
+            return DbParamType.VARCHAR;
+        }
+    }
+
+    public class OdbcEngine : IDbEngine
+    {
+        //private static string[] ParamTypeTags = new string[3] { "$i_", "$c_", "$n_" };
         public OdbcEngine()
         {
 
         }
-        public DbConnection NewConnection(string connstring)
+        public DbConnection NewConnection(string connstring, int timeout = 0)
         {
-            return new OdbcConnection(connstring);
+            var result = new OdbcConnection(connstring);
+            if (timeout > 0) result.ConnectionTimeout = timeout;
+            return result;
         }
         public DbCommand NewCommand()
         {
@@ -32,18 +50,18 @@ namespace sqlstress
         {
             return new OdbcDataAdapter(sql, connstring);
         }
-        public DbParameter NewParamenter(string paramanme, string paramvalue)
+        public DbParameter NewParameter(string paramanme, string paramvalue, DbParamType paramtype = DbParamType.VARCHAR)
         {
             DbParameter p = null;
-            int datatype = -1;
-            if (paramvalue.Length >= 2) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 2));
+            //int datatype = -1;
+            //if (paramvalue.Length >= 3) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 3));
 
             p = new OdbcParameter();
-            switch (datatype)
+            switch (paramtype)
             {
-                case 0: ((OdbcParameter)p).OdbcType = OdbcType.Int; break;
-                case 1: ((OdbcParameter)p).OdbcType = OdbcType.VarChar; break;
-                case 2: ((OdbcParameter)p).OdbcType = OdbcType.Numeric; break;
+                case DbParamType.INT: ((OdbcParameter)p).OdbcType = OdbcType.Int; break;
+                case DbParamType.VARCHAR: ((OdbcParameter)p).OdbcType = OdbcType.VarChar; break;
+                case DbParamType.FLOAT: ((OdbcParameter)p).OdbcType = OdbcType.Numeric; break;
                 default: ((OdbcParameter)p).OdbcType = OdbcType.VarChar; break;
             }
 
@@ -59,16 +77,20 @@ namespace sqlstress
             info.Name = "ODBC";
             return info;
         }
+        public string ParameterPattern(string paramname)
+        {
+            return "?";
+        }
     }
 
-    public class SqlClientEngine : IdbEngine
+    public class SqlClientEngine : IDbEngine
     {
-        private static string[] ParamTypeTags = new string[3] { "$i", "$c", "$n" };
+        //private static string[] ParamTypeTags = new string[3] { "$i_", "$c_", "$n_" };
         public SqlClientEngine()
         {
 
         }
-        public DbConnection NewConnection(string connstring)
+        public DbConnection NewConnection(string connstring, int timeout = 0)
         {
             return new SqlConnection(connstring);
         }
@@ -80,18 +102,18 @@ namespace sqlstress
         {
             return new SqlDataAdapter(sql, connstring);
         }
-        public DbParameter NewParamenter(string paramanme, string paramvalue)
+        public DbParameter NewParameter(string paramanme, string paramvalue, DbParamType paramtype = DbParamType.VARCHAR)
         {
             DbParameter p = null;
-            int datatype = -1;
-            if (paramvalue.Length >= 2) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 2));
+            //int datatype = -1;
+            //if (paramvalue.Length >= 3) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 3));
 
             p = new SqlParameter();
-            switch (datatype)
+            switch (paramtype)
             {
-                case 0: ((SqlParameter)p).SqlDbType = SqlDbType.Int; break;
-                case 1: ((SqlParameter)p).SqlDbType = SqlDbType.VarChar; break;
-                case 2: ((SqlParameter)p).SqlDbType = SqlDbType.Float; break;
+                case DbParamType.INT: ((SqlParameter)p).SqlDbType = SqlDbType.Int; break;
+                case DbParamType.VARCHAR: ((SqlParameter)p).SqlDbType = SqlDbType.VarChar; break;
+                case DbParamType.FLOAT: ((SqlParameter)p).SqlDbType = SqlDbType.Float; break;
                 default: ((SqlParameter)p).SqlDbType = SqlDbType.VarChar; break;
             }
 
@@ -107,16 +129,20 @@ namespace sqlstress
             info.Name = "SQLCLIENT";
             return info;
         }
+        public string ParameterPattern(string paramname)
+        {
+            return "@" + paramname;
+        }
     }
     
-    public class OleDbEngine : IdbEngine
+    public class OleDbEngine : IDbEngine
     {
-        private static string[] ParamTypeTags = new string[3] { "$i", "$c", "$n" };
+        //private static string[] ParamTypeTags = new string[3] { "$i_", "$c_", "$n_" };
         public OleDbEngine()
         {
 
         }
-        public DbConnection NewConnection(string connstring)
+        public DbConnection NewConnection(string connstring, int timeout = 0)
         {
             return new OleDbConnection(connstring);
         }
@@ -128,18 +154,18 @@ namespace sqlstress
         {
             return new OleDbDataAdapter(sql, connstring);
         }
-        public DbParameter NewParamenter(string paramanme, string paramvalue)
+        public DbParameter NewParameter(string paramanme, string paramvalue, DbParamType paramtype = DbParamType.VARCHAR)
         {
             DbParameter p = null;
-            int datatype = -1;
-            if (paramvalue.Length >= 2) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 2));
+            //int datatype = -1;
+            //if (paramvalue.Length >= 3) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 3));
 
             p = new OleDbParameter();
-            switch (datatype)
+            switch (paramtype)
             {
-                case 0: ((OleDbParameter)p).OleDbType = OleDbType.Integer; break;
-                case 1: ((OleDbParameter)p).OleDbType = OleDbType.VarChar; break;
-                case 2: ((OleDbParameter)p).OleDbType = OleDbType.Double; break;
+                case DbParamType.INT: ((OleDbParameter)p).OleDbType = OleDbType.Integer; break;
+                case DbParamType.VARCHAR: ((OleDbParameter)p).OleDbType = OleDbType.VarChar; break;
+                case DbParamType.FLOAT: ((OleDbParameter)p).OleDbType = OleDbType.Double; break;
                 default: ((OleDbParameter)p).OleDbType = OleDbType.VarChar; break;
             }
 
@@ -155,18 +181,22 @@ namespace sqlstress
             info.Name = "OLEDB";
             return info;
         }
+        public string ParameterPattern(string paramname)
+        {
+            return "?";
+        }
     }
 
-    public class OracleEngine : IdbEngine
+    public class OracleEngine : IDbEngine
     {
-        private static string[] ParamTypeTags = new string[3] { "$i", "$c", "$n" };
+        //private static string[] ParamTypeTags = new string[3] { "$i_", "$c_", "$n_" };
         public OracleEngine()
         {
 
         }
-        public DbConnection NewConnection(string connstring)
+        public DbConnection NewConnection(string connstring, int timeout = 0)
         {
-            return new OracleConnection(connstring);
+            return new OracleConnection(connstring); 
         }
         public DbCommand NewCommand()
         {
@@ -176,18 +206,18 @@ namespace sqlstress
         {
             return new OracleDataAdapter(sql, connstring);
         }
-        public DbParameter NewParamenter(string paramanme, string paramvalue)
+        public DbParameter NewParameter(string paramanme, string paramvalue, DbParamType paramtype = DbParamType.VARCHAR)
         {
             DbParameter p = null;
-            int datatype = -1;
-            if (paramvalue.Length >= 2) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 2));
+            //int datatype = -1;
+            //if (paramvalue.Length >= 3) Array.IndexOf(ParamTypeTags, paramvalue.Substring(0, 3));
 
             p = new OracleParameter();
-            switch (datatype)
+            switch (paramtype)
             {
-                case 0: ((OracleParameter)p).OracleType = OracleType.Int32; break;
-                case 1: ((OracleParameter)p).OracleType = OracleType.VarChar; break;
-                case 2: ((OracleParameter)p).OracleType = OracleType.Double; break;
+                case DbParamType.INT: ((OracleParameter)p).OracleType = OracleType.Int32; break;
+                case DbParamType.VARCHAR: ((OracleParameter)p).OracleType = OracleType.VarChar; break;
+                case DbParamType.FLOAT: ((OracleParameter)p).OracleType = OracleType.Double; break;
                 default: ((OracleParameter)p).OracleType = OracleType.VarChar; break;
             }
 
@@ -202,6 +232,10 @@ namespace sqlstress
             info.dataprovider = Microsoft.Data.ConnectionUI.DataProvider.OracleDataProvider;
             info.Name = "ORACLE";
             return info;
+        }
+        public string ParameterPattern(string paramname)
+        {
+            return "?";
         }
     }
 }
