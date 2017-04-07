@@ -25,5 +25,13 @@
         </Setting>
       </UsualSetting>
     </item>
+    <item>
+      <UsualSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <DisplayName>hw_2014_odbc</DisplayName>
+        <Setting>
+          <Connection Type="ODBC" ConnectString="Dsn=hw_2014;uid=sa;pwd=sa123!@#" />
+        </Setting>
+      </UsualSetting>
+    </item>
   </SettingCollection>
 </EnginSettingsHelper>

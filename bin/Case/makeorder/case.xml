@@ -5,4 +5,5 @@
       <Connection Type="ODBC" ConnectString="Dsn=run_2014;uid=sa;pwd=123456" />
     </DbEngineSetting>
   </dbsettings>
+  <others lastparamsql=".*ssab\s+(?&lt;market&gt;\d).*(?&lt;stkcode&gt;\d{6})" />
 </StressScheme>

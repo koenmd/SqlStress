@@ -1,0 +1,1275 @@
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:31***********************
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:31***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:31***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:32***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:33***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:34***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:35***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:36***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:37***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:38***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:39***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:40***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:41***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:42***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:43***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:44***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:45***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:46***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:47***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:48***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:49***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:50***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:51***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:52***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:53***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:54***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:55***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:56***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:57***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:58***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:27:59***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:00***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:01***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:02***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:03***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:04***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:05***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:06***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:06***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:06***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:28:19***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data
+
+***********************TRACE_EXCEPTION 2017-04-07 15:29:31***********************
+IndexOutOfRangeException 无法找到列 2。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 sqlstress.dialog.DatapickView.PickFromFile() 位置 E:\Meigy\Projects\SqlStress\sqlstress\dialog\DatapickView.cs:行号 130 Source:System.Data

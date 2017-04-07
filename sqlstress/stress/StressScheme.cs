@@ -80,6 +80,9 @@ namespace sqlstress
         public int run_feed = 0;
 
         [Browsable(false)]
+        public string lastparamsql = "";
+
+        [Browsable(false)]
         public string StressqlStr
         {
             get
@@ -164,6 +167,7 @@ namespace sqlstress
             //newScheme.stress_params = this.stress_params;
             newScheme.dbsettings = this.dbsettings;
             newScheme.PaintColor = this.PaintColor;
+            newScheme.lastparamsql = this.lastparamsql;
         }
 
         public void Load()
@@ -206,6 +210,11 @@ namespace sqlstress
                 {
                     this.dbsettings = (DbEngineSetting)Utils.XmlSerializerObject.ObjFromXml(typeof(DbEngineSetting), reader);
                 }
+                if (reader.MoveToContent() != XmlNodeType.Element || reader.LocalName != "others") reader.ReadToDescendant("others");
+                if (reader.MoveToContent() == XmlNodeType.Element && reader.LocalName == "others")
+                {
+                    this.lastparamsql = reader["lastparamsql"];
+                }
                 reader.Read();
             }
             //ServerAgent = new PlantRequestAgent(Serverinfo);
@@ -228,6 +237,9 @@ namespace sqlstress
             //writer.WriteEndElement();
             writer.WriteStartElement("dbsettings");
             Utils.XmlSerializerObject.ObjToXml(this.dbsettings, this.dbsettings.GetType(), writer);
+            writer.WriteEndElement();
+            writer.WriteStartElement("others");
+            writer.WriteAttributeString("lastparamsql", lastparamsql); 
             writer.WriteEndElement();
 
             //ReaderWriter.SaveScheme();
@@ -383,7 +395,7 @@ namespace sqlstress
                     foreach (KeyValuePair<int, string> paraminfo in paramsinfo)
                     {
                         newsql += st.sql.Substring(currentpos, paraminfo.Key - currentpos);
-                        newsql += sqlengin.ParameterPattern(paraminfo.Value);
+                        newsql += sqlengin.ParameterPattern(paraminfo.Value.Substring(1));
                         currentpos = paraminfo.Key + paraminfo.Value.Length;
                     }
                     newsql += st.sql.Substring(currentpos, st.sql.Length - currentpos);

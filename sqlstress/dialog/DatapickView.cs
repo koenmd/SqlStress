@@ -36,6 +36,7 @@ namespace sqlstress.dialog
                 rbDatabase.Checked = true;
                 Dbconn = FormMain.CurrentScheme.dbsettings;
                 tstbSource.Text = Dbconn.ToString();
+                edpickexp.Text = FormMain.CurrentScheme.lastparamsql;
             }
         }
 
@@ -62,6 +63,11 @@ namespace sqlstress.dialog
 
         private void btPickup_Click(object sender, EventArgs e)
         {
+            if (FormMain.CurrentScheme != null)
+            {
+                FormMain.CurrentScheme.lastparamsql = edpickexp.Text;
+            }
+
             switch (SourceType)
             {
                 case PickType.SQL:
@@ -121,10 +127,13 @@ namespace sqlstress.dialog
                     {
                         for (int i = 1; i < m.Groups.Count; i++)
                         {
-                            row[i] = m.Groups[i].Value;
+                            row[i - 1] = m.Groups[i].Value;
                         }                        
                     }
-                    this.Data.Rows.Add(row);
+                    if (matches.Count > 0)
+                    {
+                        this.Data.Rows.Add(row);
+                    }
                 }
                 catch (System.Exception ex)
                 {
